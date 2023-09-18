@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Rj Board</title>
+  </head>
+  <body>
+    <div class="main">
+      <div class="options-cont">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+      <div class="tools-cont">
+        <img class="pencil" src="Icons/Pencil.svg" alt="" />
+        <img class="eraser" src="Icons/Eraser.svg" alt="" />
+        <img class="download" src="Icons/Download.svg" alt="" />
+        <img class="upload" src="Icons/Upload.svg" alt="" />
+        <img class="sticky-notes" src="Icons/StickyNote.svg" alt="" />
+        <img class="redo" src="Icons/Redo.svg" alt="" />
+        <img class="undo" src="Icons/Undo.svg" alt="" />
+      </div>
+    </div>
+
+    <div class="pencil-tool-cont">
+      <div class="pencil-width-cont">
+        <input type="range" min="2" , max="10" value="3" class="pencil-width" />
+      </div>
+      <div class="pencil-color-cont">
+        <div class="black pencil-color"></div>
+        <div class="red pencil-color"></div>
+        <div class="green pencil-color"></div>
+      </div>
+    </div>
+
+    <div class="eraser-tool-cont">
+      <input type="range" min="2" , max="50" value="3" class="eraser-width" />
+    </div>
+
+    <!-- <div class="sticky-cont">
+      <div class="header-cont">
+        <div class="minimize"></div>
+        <div class="remove"></div>
+      </div>
+      <div class="note-cont">
+        <textarea></textarea>
+      </div>
+    </div> -->
+    <canvas></canvas>
+
+    <script src="tools.js"></script>
+    <script src="canvas.js"></script>
+  </body>
+</html>
